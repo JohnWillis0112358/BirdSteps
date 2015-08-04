@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row" ng-controller="MagicController">
+    <div class="col-sm-4">
+        <ul>
+            <h3>Magic happens here</h3>
+            <li ng-repeat="step in Steps">
+                {{step.question}} - {{step.answer}}
+            </li>
+        </ul>
+    </div>
+</div>
